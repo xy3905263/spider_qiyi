@@ -29,10 +29,7 @@ for dsj_link in dsj_links:
 
 	dsj_link_href = dsj_link.get('href')
 	dsj_link_title = dsj_link.get('title')
-	#print dsj_link_title,dsj_link_href
-	'''insert_color1 = ("INSERT INTO COLOR_NEW(Color, Value,Style)" "VALUES(%s,%s,%s)")
-	date_color1 = (dsj_link_title,dsj_link_href,dsj_link_title)
-	cursor.execute(insert_color1,date_color1)'''
+
 
 	data_d = requests.get(dsj_link_href)
 	soup_d = BeautifulSoup(data_d.text,"lxml")
