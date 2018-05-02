@@ -18,8 +18,6 @@ sql = """CREATE TABLE COLOR_NEW (
 
 cursor.execute(sql)
 
-#sql = "INSERT INTO `mac_vod` (`d_name`, `d_playurl`) VALUES ('huzhiheng@itest.info', '123456')"
-
 #获取电视剧列表页各电视剧单独链接
 url = "http://list.iqiyi.com/www/2/-------------4-1-1-iqiyi--.html"
 data = requests.get(url)
