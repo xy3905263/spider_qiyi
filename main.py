@@ -43,7 +43,8 @@ for dsj_link in dsj_links:
 
 		dsj_d_url = '第'+str(i)+'集$'+dsj_d_link_href
 		i = i+1
-
+		dsj_d_url_all += dsj_d_url
+	#print dsj_d_url_all
 		
 	insert_color = ("INSERT INTO COLOR_NEW(Color,Value,Style)" "VALUES(%s,%s,%s)")
     	data_color = (dsj_link_title,dsj_link_href,dsj_d_url_all)
